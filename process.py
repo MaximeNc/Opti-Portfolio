@@ -1,9 +1,3 @@
-# Opti-Portfolio
-
-## Simple Usage
-
-```python
-
 import numpy as np
 import pandas as pd
 import opti
@@ -32,6 +26,3 @@ vol = np.sqrt(np.dot(weights.T,np.dot(sample.cov().values,weights)) )*np.sqrt(25
 ret = np.dot(weights.T, [sample[col].mean() for col in sample.columns.values] )*252
 
 print(vol, ret)
-
-
-```
